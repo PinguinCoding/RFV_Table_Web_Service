@@ -115,7 +115,7 @@ def main():
             sns.barplot(data=((df_RFV['GrupoCliente'].value_counts() / df_RFV.shape[0]) * 100), palette='viridis', ax=ax)
             ax.set_title('Distribuição de Grupos de Clientes', fontsize=16)
             ax.set_xlabel('Grupo Cliente', fontsize=12)
-            ax.set_ylabel('Contagem', fontsize=12)
+            ax.set_ylabel('Percentagem %', fontsize=12)
 
             # Renderizar o gráfico no Streamlit
             st.write('---')
